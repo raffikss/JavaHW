@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F8B88B;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2.HelloController">
+   <children>
+      <ImageView fx:id="image1" fitHeight="116.0" fitWidth="95.0" layoutX="36.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cheezepizza.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="image2" fitHeight="85.0" fitWidth="118.0" layoutX="332.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pepperonipizza.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="image3" fitHeight="96.0" fitWidth="129.0" layoutX="18.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mushroompizza.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="image4" fitHeight="119.0" fitWidth="74.0" layoutX="377.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@drink.jpg" />
+         </image></ImageView>
+      <Button fx:id="proceed2" layoutX="385.0" layoutY="327.0" mnemonicParsing="false" onAction="#orderCheckout" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #FF8040;" text="Proceed" />
+      <Button fx:id="backTwo" layoutX="495.0" layoutY="327.0" mnemonicParsing="false" onAction="#goBackTwo" prefHeight="21.0" prefWidth="51.0" style="-fx-background-color: #b2beb5;" text="Back" />
+      <Button layoutX="143.0" layoutY="40.0" mnemonicParsing="false" onAction="#addCheeseToCart" style="-fx-background-color: #b2beb5;" text="Add" />
+      <Button layoutX="471.0" layoutY="185.0" mnemonicParsing="false" onAction="#addDrinkToCart" style="-fx-background-color: #b2beb5;" text="Add" />
+      <Button layoutX="471.0" layoutY="55.0" mnemonicParsing="false" onAction="#addPepperoniToCart" style="-fx-background-color: #b2beb5;" text="Add" />
+      <Button layoutX="160.0" layoutY="185.0" mnemonicParsing="false" onAction="#addMushroomToCart" style="-fx-background-color: #b2beb5;" text="Add" />
+      <Button layoutX="147.0" layoutY="94.0" mnemonicParsing="false" onAction="#removeCheeseFromCart" style="-fx-background-color: #b2beb5;" text="Remove" />
+      <Button layoutX="468.0" layoutY="234.0" mnemonicParsing="false" onAction="#removeDrinkFromCart" style="-fx-background-color: #b2beb5;" text="Remove" />
+      <Button layoutX="156.0" layoutY="234.0" mnemonicParsing="false" onAction="#removeMushroomFromCart" style="-fx-background-color: #b2beb5;" text="Remove" />
+      <Button layoutX="468.0" layoutY="103.0" mnemonicParsing="false" onAction="#removePepperoniFromCart" style="-fx-background-color: #b2beb5;" text="Remove" />
+      <Text fx:id="cheeseCart" layoutX="39.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In Cart: 0" />
+      <Text fx:id="drinkCart" layoutX="384.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In Cart: 0" />
+      <Text fx:id="mushroomCart" layoutX="36.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In Cart: 0" />
+      <Text fx:id="pepperoniCart" layoutX="361.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In Cart: 0" />
+      <Text fx:id="total" layoutX="36.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total: 0.0" />
+      <CheckBox fx:id="deliver" layoutX="153.0" layoutY="317.0" mnemonicParsing="false" onAction="#delivery" style="-fx-background-color: #ff7518;" text="delivery" />
+      <Button layoutX="300.0" layoutY="327.0" mnemonicParsing="false" onAction="#cancelOrder" style="-fx-background-color: #b2beb5;" text="Cancel" />
+   </children>
+</AnchorPane>

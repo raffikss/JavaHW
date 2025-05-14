@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #A0D6B4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2.HelloController">
+   <children>
+      <Label layoutX="213.0" layoutY="27.0" prefHeight="31.0" prefWidth="160.0" text="Log in">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" alignment="CENTER" layoutX="200.0" layoutY="143.0" promptText="Username" style="-fx-background-color: #026C3D;" />
+      <Button fx:id="logIn" layoutX="249.0" layoutY="267.0" mnemonicParsing="false" onAction="#userChecker" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #77DD77;" text="Login" />
+      <Button fx:id="backOne" layoutX="27.0" layoutY="333.0" mnemonicParsing="false" onAction="#goBackOne" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #77DD77;" text="Back" />
+      <PasswordField fx:id="pass" alignment="CENTER" layoutX="200.0" layoutY="208.0" promptText="Password" style="-fx-background-color: #026C3D;" />
+   </children>
+</AnchorPane>
